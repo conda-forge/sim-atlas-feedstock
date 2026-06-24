@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.3"
+  version: "0.0.4"
   python_min: '3.12'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sim-atlas/sim_atlas-${{ version }}.tar.gz
-  sha256: dea22723bc201dbfe5d3de84bbd1a41cf3c68edd86cc94cb75625a970932f20b
+  sha256: 59f0cbba79a83b4b5b4f2e89abf525df4ac350979a5fd2f4d9a2238e2207bebf
 
 build:
   number: 0
@@ -24,18 +24,18 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatchling
+    - uv-build >=0.9.13,<0.10.0
     - pip
   run:
     - python >=${{ python_min }},<3.14
     - fastapi-mcp >=0.4.0
     - fastapi >=0.122.0
-    - fastembed >=0.4
     - numpy >=1.21
     - openai >=2.8.1
     - pydantic-settings >=2.13.1
     - pyjwt >=2.12.1
     - python-workflow-definition >=0.1.2
+    - fastembed >=0.4
     - tqdm >=4.67.3
     - voyageai >=0.3.7
 
