@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.15"
+  version: "0.0.16"
   python_min: '3.12'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sim-atlas/sim_atlas-${{ version }}.tar.gz
-  sha256: 262c8311e60fb8dd5671a4f56393168b3026929730225a9bdb2815228e966cde
+  sha256: e2a54e918c4f6ea771a35cf4a5ee1bc703a696af492a564087f685dff466bf2d
 
 build:
   number: 0
